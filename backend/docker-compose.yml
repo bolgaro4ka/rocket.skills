@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    container_name: rs-postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: bolgaro4ka
+      POSTGRES_PASSWORD: bolgarin
+      POSTGRES_DATABASE: rs
+      POSTGRES_HOST: localhost
+    command: postgres

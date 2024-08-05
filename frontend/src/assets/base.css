@@ -1,0 +1,276 @@
+:root {
+
+  --font-family: 'Roboto', sans-serif;
+
+  --text-clr-light: #000;
+  --text-clr-dark: #fff;
+
+  --clr-white: #fff;
+  --clr-black: #000;
+
+
+  /*Первичный*/
+  /* https://habrastorage.org/r/w1560/getpro/habr/upload_files/e89/71f/691/e8971f6910fd5d6e9d1d405c9077c40e.png - использованная тут */
+  /* https://habrastorage.org/r/w1560/getpro/habr/upload_files/65e/4d7/867/65e4d786730616525ff2ff9f2578b6e0.png - не использованная тут*/
+
+  --primary-clr: #44682b; /* Это для фона */
+  --primary-text-clr: #fff; /* Это для текста */
+
+  --on-primary-clr: #fff; /* Это для фона */
+  --on-primary-text-clr: #44682b; /* Это для текста */
+
+  --primary-container-clr: #c4f1a1; /* Это для фона */
+  --primary-container-text-clr: #0c2004; /* Это для текста */
+
+  --on-primary-container-clr: #0c2004; /* Это для фона */
+  --on-primary-container-text-clr: #c4f1a1; /* Это для текста */
+
+
+
+
+  /* Вторичный */
+  --secondary-clr: #57614e; /* Это для текста */
+  --secondary-text-clr: #fff; /* Это для текста */
+
+  --on-secondary-clr: #fff; /* Это для фона */
+  --on-secondary-text-clr: #57614e; /* Это для текста */
+
+  --secondary-container-clr: #dce6cc; /* Это для фона */
+  --secondary-container-text-clr: #151e0f; /* Это для текста */
+
+  --on-secondary-container-clr: #151e0f; /* Это для фона */
+  --on-secondary-container-text-clr: #dce6cc; /* Это для текста */
+
+  /*ЗЕЛЕПУХА*/
+  /*Первичный*/
+  /* https://habrastorage.org/r/w1560/getpro/habr/upload_files/e89/71f/691/e8971f6910fd5d6e9d1d405c9077c40e.png - использованная тут */
+  /* https://habrastorage.org/r/w1560/getpro/habr/upload_files/65e/4d7/867/65e4d786730616525ff2ff9f2578b6e0.png - не использованная тут*/
+
+  --green-primary-clr: #44682b; /* Это для фона */
+  --green-primary-text-clr: #fff; /* Это для текста */
+
+  --green-on-primary-clr: #fff; /* Это для фона */
+  --green-on-primary-text-clr: #44682b; /* Это для текста */
+
+  --green-primary-container-clr: #c4f1a1; /* Это для фона */
+  --green-primary-container-text-clr: #0c2004; /* Это для текста */
+
+  --green-on-primary-container-clr: #0c2004; /* Это для фона */
+  --green-on-primary-container-text-clr: #c4f1a1; /* Это для текста */
+
+
+
+
+  /* Вторичный */
+  --green-secondary-clr: #57614e; /* Это для текста */
+  --green-secondary-text-clr: #fff; /* Это для текста */
+
+  --green-on-secondary-clr: #fff; /* Это для фона */
+  --green-on-secondary-text-clr: #57614e; /* Это для текста */
+
+  --green-secondary-container-clr: #dce6cc; /* Это для фона */
+  --green-secondary-container-text-clr: #151e0f; /* Это для текста */
+
+  --green-on-secondary-container-clr: #151e0f; /* Это для фона */
+  --green-on-secondary-container-text-clr: #dce6cc; /* Это для текста */
+
+
+  /*КРАСНУХА*/
+
+  --red-primary-clr: #d82c20; /* Это для фона */
+  --red-primary-text-clr: #fff; /* Это для текста */
+
+  --red-on-primary-clr: #fff; /* Это для фона */
+  --red-on-primary-text-clr: #d82c20; /* Это для текста */
+
+  --red-primary-container-clr: #ffdad6; /* Это для фона */
+  --red-primary-container-text-clr: #640c00; /* Это для текста */
+
+  --red-on-primary-container-clr: #640c00; /* Это для фона */
+  --red-on-primary-container-text-clr: #ffdad6; /* Это для текста */
+
+  /* Вторичный */
+
+  --red-secondary-clr: #57614e; /* Это для текста */
+  --red-secondary-text-clr: #fff; /* Это для текста */
+
+  --red-on-secondary-clr: #fff; /* Это для фона */
+  --red-on-secondary-text-clr: #57614e; /* Это для текста */
+
+  --red-secondary-container-clr: #dce6cc; /* Это для фона */
+  --red-secondary-container-text-clr: #151e0f; /* Это для текста */
+
+  --red-on-secondary-container-clr: #151e0f; /* Это для фона */
+  --red-on-secondary-container-text-clr: #dce6cc; /* Это для текста */
+
+  /*СИНИХА*/
+  --blue-primary-clr: #3a18d3; /* Это для фона */
+  --blue-primary-text-clr: #fff; /* Это для текста */
+
+  --blue-on-primary-clr: #fff; /* Это для фона */
+  --blue-on-primary-text-clr: #3a18d3; /* Это для текста */
+
+  --blue-primary-container-clr: #e1daff; /* Это для фона */
+  --blue-primary-container-text-clr: #0c2004; /* Это для текста */
+
+  --blue-on-primary-container-clr: #0c2004; /* Это для фона */
+  --blue-on-primary-container-text-clr: #e1daff; /* Это для текста */
+
+
+  /* Вторичный */
+
+  --blue-secondary-clr: #57614e; /* Это для текста */
+  --blue-secondary-text-clr: #fff; /* Это для текста */
+
+  --blue-on-secondary-clr: #fff; /* Это для фона */
+  --blue-on-secondary-text-clr: #57614e; /* Это для текста */
+
+  --blue-secondary-container-clr: #dce6cc; /* Это для фона */
+  --blue-secondary-container-text-clr: #151e0f; /* Это для текста */
+
+  --blue-on-secondary-container-clr: #151e0f; /* Это для фона */
+  --blue-on-secondary-container-text-clr: #dce6cc; /* Это для текста */
+
+
+
+  
+
+
+
+
+
+
+  --background-clr-current: #131313; /* Это для фона (снизу) */
+  --background-clr-alternate: #ededed; /* Это для фона (снизу) */
+
+
+  --surface-clr-current: #1e1e1e; /* Это для фона (сверху) */
+  --surface-clr-alternate: #e1e1e1; /* Это для фона (сверху) */
+
+
+  /* https://habrastorage.org/r/w1560/getpro/habr/upload_files/170/1d3/b3b/1701d3b3b7111f3981c17be4310927a4.png */
+
+  --error-clr: #d82c20; /* Это для ошибок */
+  --error-text-clr: #fff; /* Это для ошибок */
+  
+  --on-error-clr: #fff; /* Это для ошибок */
+  --on-error-text-clr: #d82c20; /* Это для ошибок */
+
+
+  --warning-clr: #dc6802; /* Это для предупреждений */
+  --warning-text-clr: #fff; /* Это для предупреждений */
+
+  --on-warning-clr: #fff; /* Это для предупреждений */
+  --on-warning-text-clr: #dc6802; /* Это для предупреждений */
+
+
+  --success-clr: #039855; /* Это для успехов */
+  --success-text-clr: #fff; /* Это для успехов */
+
+  --on-success-clr: #fff; /* Это для успехов */
+  --on-success-text-clr: #039855; /* Это для успехов */
+
+  --outline-clr: #444; /* Цвет для контура */
+}
+
+* {
+  font-family: var(--font-family);
+  box-sizing: border-box;
+  transition: all 1s;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: var(--background-clr-current);
+  margin: 0;
+}
+
+input, input:focus, input:active, input:focus-visible, textarea, textarea:focus, textarea:active, textarea:focus-visible, button, button:focus, button:active, button:focus-visible {
+  outline: none;
+}
+
+a:active,  a:link, a:visited {
+  text-decoration: none;
+  color: var(--primary-clr);
+}
+
+a:hover {
+  color: var(--primary-clr);
+}
+
+button  {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--secondary-clr);
+  color: var(--secondary-text-clr);
+  border-radius: 10px;
+}
+
+
+button:hover {
+  background-color: var(--primary-container-clr);
+  color: var(--on-secondary-text-clr);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  padding: 10px 20px;
+  border: 1px solid var(--primary-clr);
+  border-radius: 10px;
+  background-color: var(--background-clr-current);
+  color: var(--primary-text-clr);
+}
+
+textarea {
+  padding: 10px 20px;
+  border: 1px solid var(--primary-clr);
+  border-radius: 10px;
+  background-color: var(--background-clr-current);
+  color: var(--primary-text-clr);
+  resize: none;
+}
+
+.error {
+  background-color: var(--error-clr);
+  color: var(--error-text-clr);
+
+}
+
+.error:hover {
+  background-color: var(--error-text-clr);
+  color: var(--error-clr);
+}
+
+.warning {
+  background-color: var(--warning-clr);
+
+  color: var(--warning-text-clr);
+}
+
+.warning:hover {
+  background-color: var(--on-warning-clr);
+
+  color: var(--on-warning-text-clr);
+}
+
+.success {
+  background-color: var(--success-clr);
+
+  color: var(--success-text-clr);
+}
+
+.success:hover {
+  background-color: var(--on-success-clr);
+
+  color: var(--on-success-text-clr);
+}

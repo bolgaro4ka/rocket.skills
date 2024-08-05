@@ -1,0 +1,351 @@
+:root {
+
+    --font-family: 'Roboto', sans-serif;
+
+    --text-clr-light: #000;
+    --text-clr-dark: #fff;
+
+    --clr-white: #fff;
+    --clr-black: #000;
+
+
+    /*Первичный*/
+    /* https://habrastorage.org/r/w1560/getpro/habr/upload_files/e89/71f/691/e8971f6910fd5d6e9d1d405c9077c40e.png - использованная тут */
+    /* https://habrastorage.org/r/w1560/getpro/habr/upload_files/65e/4d7/867/65e4d786730616525ff2ff9f2578b6e0.png - не использованная тут*/
+
+    --primary-clr: #44682b; /* Это для фона */
+    --primary-text-clr: #fff; /* Это для текста */
+
+    --on-primary-clr: #fff; /* Это для фона */
+    --on-primary-text-clr: #44682b; /* Это для текста */
+
+    --primary-container-clr: #c4f1a1; /* Это для фона */
+    --primary-container-text-clr: #0c2004; /* Это для текста */
+
+    --on-primary-container-clr: #0c2004; /* Это для фона */
+    --on-primary-container-text-clr: #c4f1a1; /* Это для текста */
+
+
+
+
+    /* Вторичный */
+    --secondary-clr: #57614e; /* Это для текста */
+    --secondary-text-clr: #fff; /* Это для текста */
+
+    --on-secondary-clr: #fff; /* Это для фона */
+    --on-secondary-text-clr: #57614e; /* Это для текста */
+
+    --secondary-container-clr: #dce6cc; /* Это для фона */
+    --secondary-container-text-clr: #151e0f; /* Это для текста */
+
+    --on-secondary-container-clr: #151e0f; /* Это для фона */
+    --on-secondary-container-text-clr: #dce6cc; /* Это для текста */
+
+
+    /* Третичный */
+    --teriary-clr: #326769; /* Это для текста */
+    --teriary-text-clr: #fff; /* Это для текста */
+
+    --on-teriary-clr: #fff; /* Это для фона */
+    --on-teriary-text-clr: #326769; /* Это для текста */
+
+    --teriaty-container-clr: #b7edef; /* Это для фона */
+    --teriary-container-text-clr: #081f21; /* Это для текста */
+
+    --on-teriary-container-clr: #081f21; /* Это для фона */
+    --on-teriary-container-text-clr: #b7edef; /* Это для текста */
+
+
+
+
+    --background-clr-current: #131313; /* Это для фона (снизу) */
+    --background-clr-alternate: #ededed; /* Это для фона (снизу) */
+
+
+    --surface-clr-current: #1e1e1e; /* Это для фона (сверху) */
+    --surface-clr-alternate: #e1e1e1; /* Это для фона (сверху) */
+
+
+    /* https://habrastorage.org/r/w1560/getpro/habr/upload_files/170/1d3/b3b/1701d3b3b7111f3981c17be4310927a4.png */
+
+    --error-clr: #d82c20; /* Это для ошибок */
+    --error-text-clr: #fff; /* Это для ошибок */
+    
+    --on-error-clr: #fff; /* Это для ошибок */
+    --on-error-text-clr: #d82c20; /* Это для ошибок */
+
+
+    --warning-clr: #dc6802; /* Это для предупреждений */
+    --warning-text-clr: #fff; /* Это для предупреждений */
+
+    --on-warning-clr: #fff; /* Это для предупреждений */
+    --on-warning-text-clr: #dc6802; /* Это для предупреждений */
+
+
+    --success-clr: #039855; /* Это для успехов */
+    --success-text-clr: #fff; /* Это для успехов */
+
+    --on-success-clr: #fff; /* Это для успехов */
+    --on-success-text-clr: #039855; /* Это для успехов */
+
+    --outline-clr: #444; /* Цвет для контура */
+}
+
+* {
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    transition: all 1s;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background-color: var(--background-clr-current);
+    margin: 0;
+}
+
+.block__container {
+    background-color: var(--primary-container-clr);
+    color: var(--primary-container-text-clr);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.block__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.block {
+    background-color: var(--primary-clr);
+    color: var(--primary-text-clr);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navigation {
+    background-color:var(--surface-clr-current);
+    color: var(--teriary-text-clr);
+    
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 1s;
+    
+}
+
+.navigation__service-btns {
+    margin-bottom: 10px;
+}
+
+.navigation__container, .navigation__service-btns {
+    padding: 30px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-compact {
+    width: 60px;
+    height: 100vh;
+}
+
+.nav-maximized {
+    width: 200px;
+    height: 100vh;
+}
+
+.form {
+    width: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-clr);
+}
+
+a:hover {
+    color: var(--teriary-container-text-clr);
+}
+.navigation__btn {
+    width: 100%;
+    padding: 2px;
+    font-size: 10px;
+    background-color: var(--primary-clr);
+    color: var(--primary-text-clr);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.navigation__btn p {
+    display: none;
+}
+
+.navigation__btn a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navigation__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.navigation__btn-current svg {
+    box-sizing: content-box;
+    background-color: var(--clr-white);
+    width: 24px;
+    height: 24px;
+    fill: var(--clr-black);
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin-bottom: 5px;
+    
+}
+
+.navigation__btn-current p {
+    display: block;
+}
+
+
+.navigation__btn * {
+    color: var(--primary-text-clr);
+}
+
+.navigation__btn-maximized a {
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigation__btn-maximized svg {
+    margin: 0;
+}
+
+.navigation__btn-maximized p {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+}
+
+svg {
+    fill: var(--surface-clr-current);
+}
+
+.navigation__burger-btn svg {
+    fill: var(--background-clr-alternate);
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+form * {
+    width: 100%;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-container-text-clr);
+    color: var(--on-primary-clr);
+}
+
+input::placeholder {
+    color: var(--on-primary-clr);
+    text-align: center;
+}
+
+textarea {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-container-text-clr);
+    color: var(--on-primary-clr);
+    resize: none;
+    height: 100px;
+}
+
+textarea::placeholder {
+    color: var(--on-primary-clr);
+    text-align: center;
+    
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-container-text-clr);
+    color: var(--on-primary-clr);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--on-primary-clr);
+    color: var(--primary-container-text-clr);
+}
+
+.success {
+    color: var(--warning-text-clr);
+    font-size: 10px;
+    background-color: var(--success-clr);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.warning {
+    color: var(--warning-text-clr);
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--warning-clr);
+}
+
+.error {
+    color: var(--error-text-clr);
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    background-color: var(--error-clr);
+}
+
