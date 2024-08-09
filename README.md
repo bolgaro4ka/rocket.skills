@@ -30,4 +30,5 @@ Edu platform for Rocket company
 ![image](https://github.com/user-attachments/assets/3140f336-4841-4b61-8b9d-7b3e250ae11c)
 ![image](https://github.com/user-attachments/assets/3d7c1ea5-2923-4f02-ac21-518db21807f2)
 ![image](https://github.com/user-attachments/assets/0b280801-7098-4a0e-833c-670b4b81e06e)
+![image](https://github.com/user-attachments/assets/a1f190a7-4e77-4067-801e-83e5cc298c4b)
 
