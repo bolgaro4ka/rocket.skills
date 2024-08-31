@@ -1,9 +1,11 @@
 import './assets/main.css'
+import 'ant-design-vue/dist/reset.css';
 
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import axios from 'axios'
+import Antd from 'ant-design-vue';
 
 const app = createApp(App)
 
@@ -18,4 +20,4 @@ app.config.globalProperties.axios = axios
 
 
 
-app.mount('#app')
+app.use(Antd).mount('#app')

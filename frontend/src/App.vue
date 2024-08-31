@@ -1,49 +1,48 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import SidePanel from './components/SidePanel.vue'
-import UrlViewer from './components/Base/UrlViewer.vue'
+import { Layout  } from 'ant-design-vue';
+import Sider from '@/components/Sider.vue';
+import { ref } from 'vue';
+import { watch } from 'vue';
 
+import { useRoute } from 'vue-router';
+import BreadCrumb from '@/components/BreadCrumb.vue';
 
-function toggleTheme () {
-    const root = document.querySelector(":root") as HTMLElement;
+const route = useRoute();
+const showSider = ref(true);
 
-    //Получаем свойства стиля в root
-    const style = getComputedStyle(root);
+const paths = [/^\/auth/]
 
-    //Получаем значение свойства стиля из root
-    const BGcurrentColor = style.getPropertyValue("--background-clr-current");
-    const BGalternateColor = style.getPropertyValue("--background-clr-alternate");
-
-    const SFcurrentColor = style.getPropertyValue("--surface-clr-current");
-    const SFalternateColor = style.getPropertyValue("--surface-clr-alternate");
-
-    root.style.setProperty("--background-clr-current", BGalternateColor);
-    root.style.setProperty("--background-clr-alternate", BGcurrentColor);
-
-    root.style.setProperty("--surface-clr-current", SFalternateColor);
-    root.style.setProperty("--surface-clr-alternate", SFcurrentColor);
-}
-
+watch(route, (newRoute) => {
+  showSider.value = !['/register', '/login'].includes(newRoute.path);
+  if (showSider.value) {
+    for (let path of paths) {
+      if (newRoute.path.match(path)) {
+        showSider.value = false
+        break
+      }
+    }
+  }
+}, { immediate: true });
 
 </script>
 
 <template>
-  <main class="mainApp">
-    <SidePanel @toggleTheme="toggleTheme"/>
-    <div class="routerView">
-      <UrlViewer/>
-      <RouterView/>
-    </div>
-  </main>
+    <Layout style="display: flex;">
+      <Sider theme="light" v-if="showSider"></Sider>
+      <div class="wrapper-global">
+        <BreadCrumb/>
+        <div class="content">
+          <RouterView/>
+        </div>
+      </div>
+    </Layout>
 </template>
 
 <style scoped>
-.routerView {
-  padding: 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 100%;
-}
+  .wrapper-global {
+    height: 100dvh;
+    width: 100%;
+  }
+
+
 </style>
